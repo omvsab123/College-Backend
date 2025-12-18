@@ -11,13 +11,13 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:4200",
-    "https://pmd-college-frontend.vercel.app",   // change to your actual domain
+    "https://pmd-college-frontend.vercel.app",
     "https://pmd-college.vercel.app",
-    "https://shimmering-tapioca-114d8d.netlify.app/"
+    "https://shimmering-tapioca-114d8d.netlify.app"
   ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  methods: ["GET", "POST", "PUT", "DELETE"]
 }));
+
 
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
